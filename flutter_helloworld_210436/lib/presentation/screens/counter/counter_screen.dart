@@ -31,10 +31,10 @@ class _CounterScreenState extends State<CounterScreen> {
         onPressed: () {
           clickCounter++;
           setState(() {});
-          
         },
         child: const Icon(Icons.plus_one),
       ),
     );
   }
 }
+
