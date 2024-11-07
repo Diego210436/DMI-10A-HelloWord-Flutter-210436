@@ -5,7 +5,7 @@ import 'package:flutter_helloworld_210436/presentation/screens/counter/counter_f
 import 'package:flutter_helloworld_210436/presentation/screens/counter/counter_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -15,8 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(colorSchemeSeed: Colors.red),
-        //home: const CounterScreen());
-        home: const CounterfunctionsScreen());
+        theme: ThemeData(colorSchemeSeed: Colors.red,
+        fontFamily: 'Raleway',
+        ),
+        
+        home: const CounterfunctionsScreen()
+      );
   }
 }
